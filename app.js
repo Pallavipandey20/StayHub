@@ -21,6 +21,15 @@ const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 
+// FOR MODULE TYPE
+// import dns from "dns";
+// dns.setServers(["1.1.1.1", "8.8.8.8"]);
+
+// FOR COMMONJS
+const dns = require("dns");
+// change dns
+dns.setServers(["1.1.1.1", "8.8.8.8"]);
+
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 const dbUrl = process.env.ATLASDB_URL;
 
